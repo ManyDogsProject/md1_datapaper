@@ -53,1327 +53,166 @@ the license permits.
 
 `manydogs_etal_2024_data.csv`
 
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-variable
-</th>
-<th style="text-align:left;">
-question
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-date
-</td>
-<td style="text-align:left;">
-Timestamp for completion of questionnaire
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-site
-</td>
-<td style="text-align:left;">
-What location are you going to visit?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-subject_id
-</td>
-<td style="text-align:left;">
-What is your dog’s assigned subject ID?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-owned_status
-</td>
-<td style="text-align:left;">
-What is the dog’s living situation? - Selected Choice
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-birthdate
-</td>
-<td style="text-align:left;">
-Dog date of birth
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-sex
-</td>
-<td style="text-align:left;">
-What is your dog’s sex?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-age
-</td>
-<td style="text-align:left;">
-Dog age in years
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-desexed
-</td>
-<td style="text-align:left;">
-Has your dog been spayed or neutered?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-purebred
-</td>
-<td style="text-align:left;">
-Is your dog purebred?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-breed
-</td>
-<td style="text-align:left;">
-What breed is your dog?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-breed_registry
-</td>
-<td style="text-align:left;">
-Is your dog registered with a kennel club in your country?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-mixed_breed
-</td>
-<td style="text-align:left;">
-Is your dog a mix of known breeds?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-communication_method
-</td>
-<td style="text-align:left;">
-How do you typically communicate with your dog? Select all that apply
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-gesture_frequency
-</td>
-<td style="text-align:left;">
-How frequently do you use hand gestures (such as pointing or waving) to
-communicate with your dog?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-gaze_follow
-</td>
-<td style="text-align:left;">
-My dog follows pointing gestures with it’s gaze immediately
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_type
-</td>
-<td style="text-align:left;">
-Indicate the frequency with which your dog has participated in each of
-the following types of training/activity in the past 12 months. Select
-all that apply.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_puppy
-</td>
-<td style="text-align:left;">
-Puppy class frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_neighbor
-</td>
-<td style="text-align:left;">
-Good neighbor class frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_obedience1
-</td>
-<td style="text-align:left;">
-Basic obedience frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_obedience2
-</td>
-<td style="text-align:left;">
-Advanced obedience frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_rallyo
-</td>
-<td style="text-align:left;">
-Rally obedience frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_music
-</td>
-<td style="text-align:left;">
-Musical freestyle frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_agility
-</td>
-<td style="text-align:left;">
-Agility frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_flyball
-</td>
-<td style="text-align:left;">
-Flyball frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_disc
-</td>
-<td style="text-align:left;">
-DiscDog frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_conform
-</td>
-<td style="text-align:left;">
-Conformation frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_scent
-</td>
-<td style="text-align:left;">
-Scent detection frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_search
-</td>
-<td style="text-align:left;">
-Search and rescue frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_sled
-</td>
-<td style="text-align:left;">
-Sled pulling/cart pullin frequency of participation in the last 12
-months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_pullsport
-</td>
-<td style="text-align:left;">
-Skijoring/Canicross/Bikejoring frequency of participation in the last 12
-months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_therapy
-</td>
-<td style="text-align:left;">
-Therapy/ambulance dog frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_service
-</td>
-<td style="text-align:left;">
-Specialized service training frequency of participation in the last 12
-months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_hunt
-</td>
-<td style="text-align:left;">
-Game hunting/tracking frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_herd
-</td>
-<td style="text-align:left;">
-Herding/sheepdog trials frequency of participation in the last 12 months
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_other1
-</td>
-<td style="text-align:left;">
-Other frequency of participation in the last 12 months (1)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_other2
-</td>
-<td style="text-align:left;">
-Other frequency of participation in the last 12 months (2)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-training_freq_other3
-</td>
-<td style="text-align:left;">
-Other frequency of participation in the last 12 months (3)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-lab_exposure
-</td>
-<td style="text-align:left;">
-Has your dog participated in research studies before at this or another
-location/institution?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-research_experience
-</td>
-<td style="text-align:left;">
-What type of research tasks has your dog participated in during previous
-visits to research centers?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-other_household_dogs
-</td>
-<td style="text-align:left;">
-Does your dog currently live with other dogs?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-num_household_dogs
-</td>
-<td style="text-align:left;">
-If yes, how many?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-years_owned
-</td>
-<td style="text-align:left;">
-Approximately, how many years have you owned your dog?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-origin
-</td>
-<td style="text-align:left;">
-How did you acquire your dog?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-guardian_gender
-</td>
-<td style="text-align:left;">
-With which gender do you most identify?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-guardian_age
-</td>
-<td style="text-align:left;">
-How old are you?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-environment
-</td>
-<td style="text-align:left;">
-What type of environment do you and your dog live in?
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_train_1
-</td>
-<td style="text-align:left;">
-When off the leash, returns immediately when called
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_train_2
-</td>
-<td style="text-align:left;">
-Obeys the “sit” command immediately
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_train_3
-</td>
-<td style="text-align:left;">
-Obeys the “stay” command immediately
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_train_4
-</td>
-<td style="text-align:left;">
-Seems to attend/listen closely to everything you say or do
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_train_5
-</td>
-<td style="text-align:left;">
-Slow to respond to correction or punishment
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_train_6
-</td>
-<td style="text-align:left;">
-Slow to learn new tricks or tasks
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_train_7
-</td>
-<td style="text-align:left;">
-Easily distracted by interesting sights, sounds, or smells
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_train_8
-</td>
-<td style="text-align:left;">
-Will “fetch,” or attempt to fetch, sticks, balls, or objects
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-continue_cbarq
-</td>
-<td style="text-align:left;">
-Thank you so much for your answers! At this point in the survey, you
-have completed the minimum amount required to participate in ManyDogs
-Study 1, and can choose to submit your information now by selecting
-“Submit my info now”. If you would like to tell us more about your dog,
-we would love to hear all about them! We have prepared several more
-questions about their behaviour that you can answer by selecting “More
-questions please”, this will take approximately 12-15 minutes.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_1
-</td>
-<td style="text-align:left;">
-When verbally corrected or punished (scolded, shouted at, etc) by you or
-a household member.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_2
-</td>
-<td style="text-align:left;">
-When approached directly by an unfamiliar adult while being
-walked/exercised on a leash
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_3
-</td>
-<td style="text-align:left;">
-When approached directly by an unfamiliar child while being
-walked/exercised on a leash
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_4
-</td>
-<td style="text-align:left;">
-Toward unfamiliar persons approaching the dog while s/he is in your car
-(at the gas station for example).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_5
-</td>
-<td style="text-align:left;">
-When toys, bones or other objects are taken away by a household member
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_6
-</td>
-<td style="text-align:left;">
-When bathed or groomed by a household member
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_7
-</td>
-<td style="text-align:left;">
-When an unfamiliar person approaches you or anothermember of your family
-at home.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_8
-</td>
-<td style="text-align:left;">
-When unfamiliar persons approach you or another member of your family
-away from home.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_9
-</td>
-<td style="text-align:left;">
-When approached directly by a household member while s/he (the dog) is
-eating
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_10
-</td>
-<td style="text-align:left;">
-When mailmen or other delivery workers approach your home.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_11
-</td>
-<td style="text-align:left;">
-When his/her food is taken away by a household member.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_12
-</td>
-<td style="text-align:left;">
-When strangers walk past your home while your dog is outside or in the
-yard.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_13
-</td>
-<td style="text-align:left;">
-When an unfamiliar person tries to touch or pet the dog.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_14
-</td>
-<td style="text-align:left;">
-When joggers, cyclists, rollerbladers or skateboarders pass your home
-while your dog is outside or in the yard.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_15
-</td>
-<td style="text-align:left;">
-When approached directly by an unfamiliar male dog while being
-walked/exercised on a leash
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_16
-</td>
-<td style="text-align:left;">
-When approached directly by an unfamiliar female dog while being
-walked/exercised on a leash
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_17
-</td>
-<td style="text-align:left;">
-When stared at directly by a member of the household.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_18
-</td>
-<td style="text-align:left;">
-Toward unfamiliar dogs visiting your home.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_19
-</td>
-<td style="text-align:left;">
-Toward cats, squirrels or other small animals entering your yard.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_20
-</td>
-<td style="text-align:left;">
-Toward unfamiliar persons visiting your home.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_21
-</td>
-<td style="text-align:left;">
-When barked, growled, or lunged at by another (unfamiliar) dog.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_22
-</td>
-<td style="text-align:left;">
-When stepped over by a member of the household.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_23
-</td>
-<td style="text-align:left;">
-When you or a household member retrieves food or objects stolen by the
-dog.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_24
-</td>
-<td style="text-align:left;">
-Towards another (familiar) dog in your household (leave blank if no
-other dogs).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_25
-</td>
-<td style="text-align:left;">
-When approached at a favorite resting/sleeping place by another
-(familiar) household dog (leave blank if no other dogs).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_26
-</td>
-<td style="text-align:left;">
-When approached while eating by another (familiar) household dog (leave
-blank ifno other dogs).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_aggression_27
-</td>
-<td style="text-align:left;">
-When approached while playing with/chewing a favorite toy, bone, object,
-etc., by another (familiar) household dog (leave blank ifno other dogs).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_1
-</td>
-<td style="text-align:left;">
-When approached directly by an unfamiliar adult while away from your
-home
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_2
-</td>
-<td style="text-align:left;">
-When approached directly by an unfamiliar child while away from your
-home
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_3
-</td>
-<td style="text-align:left;">
-In response to sudden or loud noises (e.g. vacuum cleaner, car backfire,
-road drills, objects being dropped, etc.)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_4
-</td>
-<td style="text-align:left;">
-When unfamiliar persons visit your home
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_5
-</td>
-<td style="text-align:left;">
-When an unfamiliar person tries to touch or pet the dog.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_6
-</td>
-<td style="text-align:left;">
-In heavy traffic
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_7
-</td>
-<td style="text-align:left;">
-In response to strange or unfamiliar objects on or near the sidewalk
-(e.g. plastic trash bags, leaves, litter, flags flapping, etc.)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_8
-</td>
-<td style="text-align:left;">
-When examined/treated by a veterinarian.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_9
-</td>
-<td style="text-align:left;">
-During thunderstorms, firework displays, or similar events.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_10
-</td>
-<td style="text-align:left;">
-When approached directly by an unfamiliar dog of the same or larger
-size.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_11
-</td>
-<td style="text-align:left;">
-When approached directly by an unfamiliar dog of a smaller size.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_12
-</td>
-<td style="text-align:left;">
-When first exposed to unfamiliar situations (e.g. first car trip, first
-time in elevator, first visit to veterinarian, etc.)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_13
-</td>
-<td style="text-align:left;">
-In response to wind or wind-blown objects.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_14
-</td>
-<td style="text-align:left;">
-When having nails clipped by a household member.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_15
-</td>
-<td style="text-align:left;">
-When groomed or bathed by a household member.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_16
-</td>
-<td style="text-align:left;">
-When having his/her feet toweled by a member of the household.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_17
-</td>
-<td style="text-align:left;">
-When unfamiliar dogs visit your home
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_fear_18
-</td>
-<td style="text-align:left;">
-When barked, growled, or lunged at by an unfamiliar dog.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_separation_1
-</td>
-<td style="text-align:left;">
-Shaking, shivering, or trembling
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_separation_2
-</td>
-<td style="text-align:left;">
-Excessive Salivation
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_separation_3
-</td>
-<td style="text-align:left;">
-Restlessness/agitation/pacing
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_separation_4
-</td>
-<td style="text-align:left;">
-Whining
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_separation_5
-</td>
-<td style="text-align:left;">
-Barking
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_separation_6
-</td>
-<td style="text-align:left;">
-Howling
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_separation_7
-</td>
-<td style="text-align:left;">
-Chewing/scratching at doors, floor, windows, curtains, etc
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_separation_8
-</td>
-<td style="text-align:left;">
-Loss of appetite
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_excitability_1
-</td>
-<td style="text-align:left;">
-When you or other members of the household come home after a brief
-absence.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_excitability_2
-</td>
-<td style="text-align:left;">
-When playing with you or other members of your household.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_excitability_3
-</td>
-<td style="text-align:left;">
-When the doorbell rings.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_excitability_4
-</td>
-<td style="text-align:left;">
-Just before being taken for a walk
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_excitability_5
-</td>
-<td style="text-align:left;">
-Just before being taken on a car trip
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_excitability_6
-</td>
-<td style="text-align:left;">
-When visitors arrive at your home.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_attachment_1
-</td>
-<td style="text-align:left;">
-Displays a strong attachment for one particular member of the household
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_attachment_2
-</td>
-<td style="text-align:left;">
-Tends to follow you (or other members of household) about the house,
-from room to room
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_attachment_3
-</td>
-<td style="text-align:left;">
-Tends to sit close to, or in contact with, you (or others) when you are
-sitting down
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_attachment_4
-</td>
-<td style="text-align:left;">
-Tends to nudge, nuzzle or paw you (or others) for attention when you are
-sitting down
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_attachment_5
-</td>
-<td style="text-align:left;">
-Becomes agitated (whines, jumps up, tries to intervene) when you (or
-others) show affection for another person
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_attachment_6
-</td>
-<td style="text-align:left;">
-Becomes agitated (whines, jumps up, tries to intervene) when you show
-affection for another dog or animal
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_1
-</td>
-<td style="text-align:left;">
-Chases or would chase cats given the opportunity
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_2
-</td>
-<td style="text-align:left;">
-Chases or would chase birds given the opportunity
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_3
-</td>
-<td style="text-align:left;">
-Chases or would chase squirrels, rabbits and other small animals given
-the opportunity
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_4
-</td>
-<td style="text-align:left;">
-Escapes or would escape from home or yard given the chance
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_5
-</td>
-<td style="text-align:left;">
-Rolls in animal droppings or other ‘smelly’ substances
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_6
-</td>
-<td style="text-align:left;">
-Eats own or other animals’ droppings or feces
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_7
-</td>
-<td style="text-align:left;">
-Chews inappropriate objects
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_8
-</td>
-<td style="text-align:left;">
-Mounts’ objects, furniture, or people
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_9
-</td>
-<td style="text-align:left;">
-Begs persistently for food when people are eating
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_10
-</td>
-<td style="text-align:left;">
-Steals food
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_11
-</td>
-<td style="text-align:left;">
-Nervous or frightened on stairs
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_12
-</td>
-<td style="text-align:left;">
-Pulls excessively hard when on the leash
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_13
-</td>
-<td style="text-align:left;">
-Urinates against objects/ furnishings in your home
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_14
-</td>
-<td style="text-align:left;">
-Urinates when approached, petted, handled or picked up
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_15
-</td>
-<td style="text-align:left;">
-Urinates when left alone at night, or during the daytime
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_16
-</td>
-<td style="text-align:left;">
-Defecates when left alone at night, or during the daytime
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_17
-</td>
-<td style="text-align:left;">
-Hyperactive, restless, has trouble settling down
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_18
-</td>
-<td style="text-align:left;">
-Playful, puppyish, boisterous
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_19
-</td>
-<td style="text-align:left;">
-Active, energetic, always on the go
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_20
-</td>
-<td style="text-align:left;">
-Stares intently at nothing visible
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_21
-</td>
-<td style="text-align:left;">
-Snaps at (invisible) flies
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_22
-</td>
-<td style="text-align:left;">
-Chases own tail/hind end
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_23
-</td>
-<td style="text-align:left;">
-Chases/follows shadows, light spots, etc.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_24
-</td>
-<td style="text-align:left;">
-Barks persistently when alarmed or excited
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_25
-</td>
-<td style="text-align:left;">
-Licks him/herself excessively
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_26
-</td>
-<td style="text-align:left;">
-Licks people or objects excessively
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-cbarq_miscellaneous_27
-</td>
-<td style="text-align:left;">
-Displays other bizarre, strange, or repetitive behavior(s)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-status
-</td>
-<td style="text-align:left;">
-Status of subject in experiment
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-first_condition
-</td>
-<td style="text-align:left;">
-Which experimental condition was experienced first
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-onecup
-</td>
-<td style="text-align:left;">
-Warm-up trials with one cup
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-twocup
-</td>
-<td style="text-align:left;">
-Warm-up trials with two cups
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-nonostensive
-</td>
-<td style="text-align:left;">
-Nonostensive experimental trials
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-ostensive
-</td>
-<td style="text-align:left;">
-Ostensive experimental trials
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-odor
-</td>
-<td style="text-align:left;">
-Odor control trials
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-right_side_ost
-</td>
-<td style="text-align:left;">
-Right side correct in ostensive condition
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-right_side_nonost
-</td>
-<td style="text-align:left;">
-Right side correct in nonostensive condition
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-right_choice_ost
-</td>
-<td style="text-align:left;">
-Right side chosen in ostenstive condition
-</td>
-</tr>
-<tr>
-<td style="text-align:left;font-family: monospace;">
-right_choice_nonost
-</td>
-<td style="text-align:left;">
-Right side chosen in nonostensive condition
-</td>
-</tr>
-</tbody>
-</table>
+| variable                 | question                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|:-------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| date                     | Timestamp for completion of questionnaire                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| site                     | What location are you going to visit?                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| subject_id               | What is your dog’s assigned subject ID?                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| owned_status             | What is the dog’s living situation? - Selected Choice                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| birthdate                | Dog date of birth                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| sex                      | What is your dog’s sex?                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| age                      | Dog age in years                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| desexed                  | Has your dog been spayed or neutered?                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| purebred                 | Is your dog purebred?                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| breed                    | What breed is your dog?                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| breed_registry           | Is your dog registered with a kennel club in your country?                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| mixed_breed              | Is your dog a mix of known breeds?                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| communication_method     | How do you typically communicate with your dog? Select all that apply                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| gesture_frequency        | How frequently do you use hand gestures (such as pointing or waving) to communicate with your dog?                                                                                                                                                                                                                                                                                                                                                                                               |
+| gaze_follow              | My dog follows pointing gestures with it’s gaze immediately                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| training_type            | Indicate the frequency with which your dog has participated in each of the following types of training/activity in the past 12 months. Select all that apply.                                                                                                                                                                                                                                                                                                                                    |
+| training_freq_puppy      | Puppy class frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| training_freq_neighbor   | Good neighbor class frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| training_freq_obedience1 | Basic obedience frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| training_freq_obedience2 | Advanced obedience frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| training_freq_rallyo     | Rally obedience frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| training_freq_music      | Musical freestyle frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| training_freq_agility    | Agility frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| training_freq_flyball    | Flyball frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| training_freq_disc       | DiscDog frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| training_freq_conform    | Conformation frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| training_freq_scent      | Scent detection frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| training_freq_search     | Search and rescue frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| training_freq_sled       | Sled pulling/cart pullin frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| training_freq_pullsport  | Skijoring/Canicross/Bikejoring frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| training_freq_therapy    | Therapy/ambulance dog frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| training_freq_service    | Specialized service training frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| training_freq_hunt       | Game hunting/tracking frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| training_freq_herd       | Herding/sheepdog trials frequency of participation in the last 12 months                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| training_freq_other1     | Other frequency of participation in the last 12 months (1)                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| training_freq_other2     | Other frequency of participation in the last 12 months (2)                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| training_freq_other3     | Other frequency of participation in the last 12 months (3)                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| lab_exposure             | Has your dog participated in research studies before at this or another location/institution?                                                                                                                                                                                                                                                                                                                                                                                                    |
+| research_experience      | What type of research tasks has your dog participated in during previous visits to research centers?                                                                                                                                                                                                                                                                                                                                                                                             |
+| other_household_dogs     | Does your dog currently live with other dogs?                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| num_household_dogs       | If yes, how many?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| years_owned              | Approximately, how many years have you owned your dog?                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| origin                   | How did you acquire your dog?                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| guardian_gender          | With which gender do you most identify?                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| guardian_age             | How old are you?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| environment              | What type of environment do you and your dog live in?                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| cbarq_train_1            | When off the leash, returns immediately when called                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| cbarq_train_2            | Obeys the “sit” command immediately                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| cbarq_train_3            | Obeys the “stay” command immediately                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| cbarq_train_4            | Seems to attend/listen closely to everything you say or do                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_train_5            | Slow to respond to correction or punishment                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| cbarq_train_6            | Slow to learn new tricks or tasks                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| cbarq_train_7            | Easily distracted by interesting sights, sounds, or smells                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_train_8            | Will “fetch,” or attempt to fetch, sticks, balls, or objects                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| continue_cbarq           | Thank you so much for your answers! At this point in the survey, you have completed the minimum amount required to participate in ManyDogs Study 1, and can choose to submit your information now by selecting “Submit my info now”. If you would like to tell us more about your dog, we would love to hear all about them! We have prepared several more questions about their behaviour that you can answer by selecting “More questions please”, this will take approximately 12-15 minutes. |
+| cbarq_aggression_1       | When verbally corrected or punished (scolded, shouted at, etc) by you or a household member.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| cbarq_aggression_2       | When approached directly by an unfamiliar adult while being walked/exercised on a leash                                                                                                                                                                                                                                                                                                                                                                                                          |
+| cbarq_aggression_3       | When approached directly by an unfamiliar child while being walked/exercised on a leash                                                                                                                                                                                                                                                                                                                                                                                                          |
+| cbarq_aggression_4       | Toward unfamiliar persons approaching the dog while s/he is in your car (at the gas station for example).                                                                                                                                                                                                                                                                                                                                                                                        |
+| cbarq_aggression_5       | When toys, bones or other objects are taken away by a household member                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| cbarq_aggression_6       | When bathed or groomed by a household member                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| cbarq_aggression_7       | When an unfamiliar person approaches you or anothermember of your family at home.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| cbarq_aggression_8       | When unfamiliar persons approach you or another member of your family away from home.                                                                                                                                                                                                                                                                                                                                                                                                            |
+| cbarq_aggression_9       | When approached directly by a household member while s/he (the dog) is eating                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| cbarq_aggression_10      | When mailmen or other delivery workers approach your home.                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_aggression_11      | When his/her food is taken away by a household member.                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| cbarq_aggression_12      | When strangers walk past your home while your dog is outside or in the yard.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| cbarq_aggression_13      | When an unfamiliar person tries to touch or pet the dog.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_aggression_14      | When joggers, cyclists, rollerbladers or skateboarders pass your home while your dog is outside or in the yard.                                                                                                                                                                                                                                                                                                                                                                                  |
+| cbarq_aggression_15      | When approached directly by an unfamiliar male dog while being walked/exercised on a leash                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_aggression_16      | When approached directly by an unfamiliar female dog while being walked/exercised on a leash                                                                                                                                                                                                                                                                                                                                                                                                     |
+| cbarq_aggression_17      | When stared at directly by a member of the household.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| cbarq_aggression_18      | Toward unfamiliar dogs visiting your home.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_aggression_19      | Toward cats, squirrels or other small animals entering your yard.                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| cbarq_aggression_20      | Toward unfamiliar persons visiting your home.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| cbarq_aggression_21      | When barked, growled, or lunged at by another (unfamiliar) dog.                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| cbarq_aggression_22      | When stepped over by a member of the household.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| cbarq_aggression_23      | When you or a household member retrieves food or objects stolen by the dog.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| cbarq_aggression_24      | Towards another (familiar) dog in your household (leave blank if no other dogs).                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| cbarq_aggression_25      | When approached at a favorite resting/sleeping place by another (familiar) household dog (leave blank if no other dogs).                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_aggression_26      | When approached while eating by another (familiar) household dog (leave blank ifno other dogs).                                                                                                                                                                                                                                                                                                                                                                                                  |
+| cbarq_aggression_27      | When approached while playing with/chewing a favorite toy, bone, object, etc., by another (familiar) household dog (leave blank ifno other dogs).                                                                                                                                                                                                                                                                                                                                                |
+| cbarq_fear_1             | When approached directly by an unfamiliar adult while away from your home                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| cbarq_fear_2             | When approached directly by an unfamiliar child while away from your home                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| cbarq_fear_3             | In response to sudden or loud noises (e.g. vacuum cleaner, car backfire, road drills, objects being dropped, etc.)                                                                                                                                                                                                                                                                                                                                                                               |
+| cbarq_fear_4             | When unfamiliar persons visit your home                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| cbarq_fear_5             | When an unfamiliar person tries to touch or pet the dog.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_fear_6             | In heavy traffic                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| cbarq_fear_7             | In response to strange or unfamiliar objects on or near the sidewalk (e.g. plastic trash bags, leaves, litter, flags flapping, etc.)                                                                                                                                                                                                                                                                                                                                                             |
+| cbarq_fear_8             | When examined/treated by a veterinarian.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_fear_9             | During thunderstorms, firework displays, or similar events.                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| cbarq_fear_10            | When approached directly by an unfamiliar dog of the same or larger size.                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| cbarq_fear_11            | When approached directly by an unfamiliar dog of a smaller size.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| cbarq_fear_12            | When first exposed to unfamiliar situations (e.g. first car trip, first time in elevator, first visit to veterinarian, etc.)                                                                                                                                                                                                                                                                                                                                                                     |
+| cbarq_fear_13            | In response to wind or wind-blown objects.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_fear_14            | When having nails clipped by a household member.                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| cbarq_fear_15            | When groomed or bathed by a household member.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| cbarq_fear_16            | When having his/her feet toweled by a member of the household.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| cbarq_fear_17            | When unfamiliar dogs visit your home                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| cbarq_fear_18            | When barked, growled, or lunged at by an unfamiliar dog.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_separation_1       | Shaking, shivering, or trembling                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| cbarq_separation_2       | Excessive Salivation                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| cbarq_separation_3       | Restlessness/agitation/pacing                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| cbarq_separation_4       | Whining                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| cbarq_separation_5       | Barking                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| cbarq_separation_6       | Howling                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| cbarq_separation_7       | Chewing/scratching at doors, floor, windows, curtains, etc                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_separation_8       | Loss of appetite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| cbarq_excitability_1     | When you or other members of the household come home after a brief absence.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| cbarq_excitability_2     | When playing with you or other members of your household.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| cbarq_excitability_3     | When the doorbell rings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_excitability_4     | Just before being taken for a walk                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| cbarq_excitability_5     | Just before being taken on a car trip                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| cbarq_excitability_6     | When visitors arrive at your home.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| cbarq_attachment_1       | Displays a strong attachment for one particular member of the household                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| cbarq_attachment_2       | Tends to follow you (or other members of household) about the house, from room to room                                                                                                                                                                                                                                                                                                                                                                                                           |
+| cbarq_attachment_3       | Tends to sit close to, or in contact with, you (or others) when you are sitting down                                                                                                                                                                                                                                                                                                                                                                                                             |
+| cbarq_attachment_4       | Tends to nudge, nuzzle or paw you (or others) for attention when you are sitting down                                                                                                                                                                                                                                                                                                                                                                                                            |
+| cbarq_attachment_5       | Becomes agitated (whines, jumps up, tries to intervene) when you (or others) show affection for another person                                                                                                                                                                                                                                                                                                                                                                                   |
+| cbarq_attachment_6       | Becomes agitated (whines, jumps up, tries to intervene) when you show affection for another dog or animal                                                                                                                                                                                                                                                                                                                                                                                        |
+| cbarq_miscellaneous_1    | Chases or would chase cats given the opportunity                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| cbarq_miscellaneous_2    | Chases or would chase birds given the opportunity                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| cbarq_miscellaneous_3    | Chases or would chase squirrels, rabbits and other small animals given the opportunity                                                                                                                                                                                                                                                                                                                                                                                                           |
+| cbarq_miscellaneous_4    | Escapes or would escape from home or yard given the chance                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_miscellaneous_5    | Rolls in animal droppings or other ‘smelly’ substances                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| cbarq_miscellaneous_6    | Eats own or other animals’ droppings or feces                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| cbarq_miscellaneous_7    | Chews inappropriate objects                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| cbarq_miscellaneous_8    | Mounts’ objects, furniture, or people                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| cbarq_miscellaneous_9    | Begs persistently for food when people are eating                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| cbarq_miscellaneous_10   | Steals food                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| cbarq_miscellaneous_11   | Nervous or frightened on stairs                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| cbarq_miscellaneous_12   | Pulls excessively hard when on the leash                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_miscellaneous_13   | Urinates against objects/ furnishings in your home                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| cbarq_miscellaneous_14   | Urinates when approached, petted, handled or picked up                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| cbarq_miscellaneous_15   | Urinates when left alone at night, or during the daytime                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_miscellaneous_16   | Defecates when left alone at night, or during the daytime                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| cbarq_miscellaneous_17   | Hyperactive, restless, has trouble settling down                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| cbarq_miscellaneous_18   | Playful, puppyish, boisterous                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| cbarq_miscellaneous_19   | Active, energetic, always on the go                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| cbarq_miscellaneous_20   | Stares intently at nothing visible                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| cbarq_miscellaneous_21   | Snaps at (invisible) flies                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_miscellaneous_22   | Chases own tail/hind end                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| cbarq_miscellaneous_23   | Chases/follows shadows, light spots, etc.                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| cbarq_miscellaneous_24   | Barks persistently when alarmed or excited                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| cbarq_miscellaneous_25   | Licks him/herself excessively                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| cbarq_miscellaneous_26   | Licks people or objects excessively                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| cbarq_miscellaneous_27   | Displays other bizarre, strange, or repetitive behavior(s)                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| status                   | Status of subject in experiment                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| first_condition          | Which experimental condition was experienced first                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| onecup                   | Warm-up trials with one cup                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| twocup                   | Warm-up trials with two cups                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| nonostensive             | Nonostensive experimental trials                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ostensive                | Ostensive experimental trials                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| odor                     | Odor control trials                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| right_side_ost           | Right side correct in ostensive condition                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| right_side_nonost        | Right side correct in nonostensive condition                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| right_choice_ost         | Right side chosen in ostenstive condition                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| right_choice_nonost      | Right side chosen in nonostensive condition                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 ### R Markdown documents
 

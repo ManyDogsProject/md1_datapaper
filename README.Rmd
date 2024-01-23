@@ -47,8 +47,7 @@ library(dplyr)
 codebook <- read.csv("manydogs_etal_2024_codebook.csv")
 table <- codebook |> 
   select(variable = variableName, question)
-knitr::kable(table) |> 
-  kableExtra::column_spec(1, monospace = TRUE)
+knitr::kable(table)
 ```
 
 
