@@ -1,0 +1,115 @@
+---
+output: 
+  html_document: 
+    keep_md: true
+---
+
+# Data for ManyDogs 1
+
+-   Created on 2024-01-23 by Jeffrey R. Stevens
+    (<jeffrey.r.stevens@gmail.com>)
+-   Finalized on 2024-01-23
+
+This repository provides the complete data and reproducible research materials for the ManyDogs 1 project. This includes the following:
+
+-   Data
+-   R Markdown file for the manuscript
+
+## Citation
+
+If you use any of these materials, please cite:
+
+ManyDogs Project, Espinosa, J., Hare, E., Alberghina, D., Perez, B, & Stevens, J.R. (2024). Data for ManyDogs 1. https://doi.org/10.31234/osf.io/??????
+
+## Summary
+
+In this project, pet dogs voluntarily participated in a two-alternative object choice task with ostensive and non-ostensive experimental conditions, along with warm-up (one cup, two cup) trials and an odor control condition. We collected data from 20 sites in nine countries. The data file (`manydogs_etal_2024_data.csv`) contains records from 704 dogs tested for the main experiment between 2022-01-20 and 2023-01-23. Each row represents data for an individual dog.
+
+## License
+
+All materials presented here are released under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0). You are free to:
+
+-   Share — copy and redistribute the material in any medium or format
+-   Adapt — remix, transform, and build upon the material for any
+    purpose, even commercially. Under the following terms:
+-   Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any     reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+## Files
+
+### Data files
+
+`manydogs_etal_2024_data.csv`
+
+```{r echo=FALSE, message=FALSE}
+library(dplyr)
+codebook <- read.csv("manydogs_etal_2024_codebook.csv")
+table <- codebook |> 
+  select(variable = variableName, question)
+knitr::kable(table) |> 
+  kableExtra::column_spec(1, monospace = TRUE)
+```
+
+
+### R Markdown documents
+
+`manydogs_etal_2024.Rmd` - R Markdown document with R code embedded for main manuscript and appendix
+
+### Installation
+
+To reproduce these results, first clone or unzip the Git repository into a folder. Then, compile the R Markdown document `manydogs_etal_2024.Rmd.` Open this file in RStudio and ensure that you have packages [{knitr}](https://yihui.org/knitr/) and [{rmarkdown}](https://rmarkdown.rstudio.com/) installed. Once installed, use {knitr} to render the document (control-shift-K). 
+
+# Dataset Metadata
+The following table is necessary for this dataset to be indexed by search
+engines such as <a href="https://g.co/datasetsearch">Google Dataset Search</a>.
+<div itemscope itemtype="http://schema.org/Dataset">
+<table>
+<tr>
+<th>property</th>
+<th>value</th>
+</tr>
+<tr>
+<td>name</td>
+<td><code itemprop="name">Data for ManyDogs 1</code></td>
+</tr>
+<tr>
+<td>description</td>
+<td><code itemprop="description">The dataset from the paper <a href="https://doi.org/10.31234/osf.io/???????">Data for ManyDogs 1</a>. In this project, pet dogs voluntarily participated in a two-alternative object choice task with ostensive and non-ostensive experimental conditions, along with warm-up (one cup, two cup) trials and an odor control condition. We collected data from 20 sites in nine countries. The data file (`manydogs_etal_2024_data.csv`) contains records from 704 dogs tested for the main experiment between 2022-01-20 and 2023-01-23. Each row represents data for an individual dog.</code></td>
+</tr>
+</tr>
+<tr>
+<td>url</td>
+<td><code itemprop="url">https://github.com/ManyDogsProject/md1_datapaper</code></td>
+</tr>
+<tr>
+<td>sameAs</td>
+<td><code itemprop="sameAs">https://github.com/ManyDogsProject/md1_datapaper</code></td>
+</tr>
+<tr>
+<td>citation</td>
+<td><code itemprop="citation">https://doi.org/10.31234/osf.io/??????</code></td>
+</tr>
+<tr>
+<td>license</td>
+<td>
+<div itemscope itemtype="http://schema.org/CreativeWork" itemprop="license">
+<table>
+<tr>
+<th>property</th>
+<th>value</th>
+</tr>
+<tr>
+<td>name</td>
+<td><code itemprop="name">CC BY-SA 4.0</code></td>
+</tr>
+<tr>
+<td>url</td>
+<td><code itemprop="url">https://creativecommons.org/licenses/by-sa/4.0/</code></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
