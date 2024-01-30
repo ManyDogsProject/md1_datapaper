@@ -57,6 +57,7 @@ author:
     #   - Visualization
     #   - Writing - original draft
     #   - Writing - review & editing
+    email: jeffrey.r.stevens@gmail.com
     corresponding: yes
     address: B83 East Stadium, University of Nebraska-Lincoln, Lincoln, Nebraska 68588, USA
 
@@ -98,7 +99,7 @@ tablelist         : no
 footnotelist      : no
 
 classoption       : "man"
-output            : papaja::apa6_pdf
+output            : papaja::apa6_word
 header-includes:
    - \usepackage{pdflscape}
 ---
@@ -108,12 +109,13 @@ library(knitr)
 library(kableExtra)
 library(tidyverse)
 library(papaja)
+library(flextable)
 r_refs("r-references.bib")
 
 # Load files
 data <- read_csv("manydogs_etal_2024_data.csv", show_col_types = FALSE)
 data_rows <- nrow(data)
-codebook <- read_csv("manydogs_etal_2024_codebook.csv", show_col_types = FALSE)
+codebook <- read_csv("manydogs_etal_2024_codebook.csv", show_col_types = FALSE, col_select = c(1:4))
 ```
 
 ```{r analysis-preferences}
@@ -140,14 +142,14 @@ In addition to testing our main hypothesis, we took the opportunity offered by m
 <!-- Describe the methods used for data collection including all sub-headings below as deemed relevant. There is no word limit to this section; we are looking for a carefully detailed account of the data collection methods with sufficient detail to allow replication and meaningful secondary use of the data. -->
 
 ## 2.1 Study design
-**Please describe the overall study design as requested here. This section is not about surveys but general study characteristics.**
-_Provide a clear overview of the study design. This should involve broader features, for example whether the data is cross-sectional or longitudinal, from online questionnaires or face-to-face interviews. A clear overview of the central foci and variables of the data should be presented, including differentiation of between- and within-participant dimensions wherever relevant._
+<!-- **Please describe the overall study design as requested here. This section is not about surveys but general study characteristics.** -->
+<!-- _Provide a clear overview of the study design. This should involve broader features, for example whether the data is cross-sectional or longitudinal, from online questionnaires or face-to-face interviews. A clear overview of the central foci and variables of the data should be presented, including differentiation of between- and within-participant dimensions wherever relevant._ -->
 
-The survey with demographic information and C-BARQ trainability questionnaire was translated in n. Languages  and administered through an Internet link provided to all researchers involved. Questionnaire was administered to dog owners and guardians prior to participate in the behavioral study. The survey was their dog’s demographics, guardian demographics, household information, dog communication information, training history, research experience and then we have the training, aggression, fear, and separation related behavior, excitability, attachment, and attention seeking, and miscellaneous which are chasing, chewing, begging, pulling, urinating activity, barking, licking, and things like that and our point following behavior. We used social media platforms to spread an open call to pet owners and guardians on a study and used emails lists to advertise the project. We used C-BARQ questionnaire for collecting information from pet guardians about themselves and their dogs. With the help from the platform github and google forms we were able to collect the data from participants and store it in github for future analysis.
+The ManyDogs 1 project used a cross-sectional design in which guardians completed an online survey before bringing their dog into a research team's site for behavioral testing. The online survey recorded demographic information of guardians and dogs, along with a standardized evaluation of canine temperament and behavior using the Canine Behavioral Assessment and Research Questionnaire [C-BARQ©, @Serpell.Hsu.2001; @Hsu.Serpell.2003]. Once guardians completed the survey, they were invited to the team research site for behavioral testing. Behavioral sessions involved a series of object choice tasks, including the two experimental conditions testing the effects of ostensive and non-ostensive signals on point following. The key focus of the study was to compare responses to the ostensive and non-ostensive signals within subjects and investigate between-subjects factors (drawn from the survey data) that may account for any variability in the behavioral responses.
 
 ## 2.2 Time of data collection
 <!-- Specific time periods in which the data was collected e.g., December 2020-Febuary 2021, or 1st-15th of May 2019. Date of data collection will not be considered an evaluative criteria of the work.  -->
-Overall, data were collected between `r as.character(month(sort(data$date)[1], label = TRUE))` `r year(sort(data$date)[1])` and `r as.character(month(sort(data$date[!is.na(data$date)], decreasing = TRUE)[1], label = TRUE))` `r year(sort(data$date[!is.na(data$date)], decreasing = TRUE)[1])`, though research sites differed in when they collected data during that timeframe (collection dates available in dataset).
+Overall, data were collected between `r as.character(month(sort(data$date)[1], label = TRUE))` `r year(sort(data$date)[1])` and `r as.character(month(sort(data$date[!is.na(data$date)], decreasing = TRUE)[1], label = TRUE))` `r year(sort(data$date[!is.na(data$date)], decreasing = TRUE)[1])`, though research sites differed in when they collected data during that time frame (collection dates available in dataset).
 
 ## 2.3 Location of data collection
 <!-- List regions or countries covered by the data with as much detail as is possible e.g. Data was collected in South-East London, UK or at the University of Bologna, Italy. -->
@@ -163,20 +165,28 @@ include_graphics("md1_countries.png")
 Across all 20 research sites, teams behaviorally tested `r data_rows` dogs (M:F = `r nrow(data[data$sex=="Male",])`:`r nrow(data[data$sex=="Female",])`, mean ± SD age = `r round(mean(data$age, na.rm = TRUE), digits = 1)` ± `r apa_num(sd(data$age, na.rm = TRUE), digits = 1)` years [range = `r apa_num(min(data$age, na.rm = TRUE), digits = 1)`-`r apa_num(max(data$age, na.rm = TRUE), digits = 1)`]). Approximately `r apa_num(mean(data$desexed=="Yes", na.rm = TRUE) * 100, digits = 1)`% of the dogs were spayed or neutered, `r apa_num(mean(data$purebred=="Yes", na.rm = TRUE) * 100, digits = 1)`% were purebred (comprising `r length(unique(data$breed))` breeds), `r apa_num(mean(data$owned_status=="Private home", na.rm = TRUE) * 100, digits = 1)`% lived in private homes, `r apa_num(mean(data$owned_status=="Group housing (e.g., working dog kennel)", na.rm = TRUE) * 100, digits = 1)`% lived in group/kennel housing, and `r apa_num(mean(data$owned_status=="Other", na.rm = TRUE) * 100, digits = 1)`% lived in other housing. Complete behavioral data were collected from `r length(data$status[data$status=="Included"])` dogs, and complete survey data were collected from `r length(data$status[!is.na(data$cbarq_miscellaneous_26) & !is.na(data$cbarq_miscellaneous_27)])` dogs. Guardians identified as female (`r apa_num(mean(data$guardian_gender=="Female", na.rm = TRUE) * 100, digits = 1)`%), male (`r apa_num(mean(data$guardian_gender=="Male", na.rm = TRUE) * 100, digits = 1)`%), and nonbinary/other (`r apa_num(mean(data$guardian_gender=="Other", na.rm = TRUE) * 100, digits = 1)`%) with a modal guardian age range of `r sub(" - ", "-", slice_max(count(data, guardian_age), order_by = n)$guardian_age)` years.
 
 ## 2.5 Materials/Survey instruments
-**Please describe all survey instruments as requested here. This should describe all materials in the survey for the complete dataset provided here (not just the MD1 dataset).**
-_Describe the study materials, constructs measured, stimuli, number of items, participant instructions, and, if applicable, factors in the experimental design. Here, a high level of detail is expected to allow replication, and links to stored copies of the exact materials used are expected (unless under copyright or other such restriction)._
+<!-- **Please describe all survey instruments as requested here. This should describe all materials in the survey for the complete dataset provided here (not just the MD1 dataset).** -->
+<!-- _Describe the study materials, constructs measured, stimuli, number of items, participant instructions, and, if applicable, factors in the experimental design. Here, a high level of detail is expected to allow replication, and links to stored copies of the exact materials used are expected (unless under copyright or other such restriction)._ -->
+
+The guardian survey was hosted on Qualtrics (complete survey available at <https://osf.io/7rwpc/>). The survey included dog demographics (name, living situation, sex, neuter status, birth date, breed, acquisition, ), training information (communication style and frequency, training experience, research experience), guardian demographics (gender, age, community type), and the Canine Behavioral Assessment and Research Questionnaire (C-BARQ). The first eight questions of the C-BARQ concern trainability, and their answers were used as part of the preregistered analysis of pointing  [@ManyDogsProject.etal.2023a]. After answering the C-BARQ trainability questions, guardians could opt out of completing the rest of the C-BARQ questions. If they continued, they answered questions about aggression (28 questions), fear (18 questions), separation-related behavior (9 questions), excitability (7 questions), attachment (7 questions), attachment/attention-seeking (6 questions), and miscellaneous behavior problems (28 questions), including chasing, chewing, begging, pulling, urinating, defecating, barking, and licking. Most questions used a 5-point Likert scale with a Not Observed option. Some categories included open-ended questions for additional explanations.
+
+Behavioral data were collected at individual research sites, where handlers brought the dogs in for test sessions. After acclimating subjects to the testing room, subjects completed a series of object choice tasks in which food was hidden under cups and subjects had to approach a cup to receive any available food rewards hidden underneath [complete methods available in @ManyDogsProject.etal.2023a]. These tests were conducted by two individuals, an experimenter to arrange the food and cups and a handler to release the subject to make a choice (handlers could be either trained researchers or the dog's guardian). Sessions started with warm-up trials to familiarize subjects to the testing procedures. These involved subjects seeing whether a food reward was placed under a single cup (one-cup warm-ups with four out of seven trials correct) or one of two cups (two-cup warm-ups with four out of size trials correct). Once meeting the completion criteria, subjects moved one to two experimental condition sessions with eight trials per condition (order counterbalanced between subjects). In the non-ostensive condition, the experimenter cleared their throat to get the dog's attention, showed them the food, and placed food underneath one of two cups behind a visual barrier. They then removed the barrier, gazed at the ground in front of them, cleared their throat again, and pointed to the cup with the food using a contralateral momentary point. In the ostensive condition, instead of clearing their throat, the experimenter said "[dog name], look!" in an engaging voice and instead of looking at the floor, they made eye contact with the subject. The two conditions were separated by a one minute play break and re-familiarization with the testing situation    . Finally, subjects completed an odor control condition with a similar set-up as the ostensive condition, except no cue was given. Therefore, if subjects were using olfactory instead of visual cues, they should be able to choose the correct cup.
 
 
-
-completed a survey on their dog’s background, including breed, training history, and other demographics. They also completed the trainability scale of the  Canine Behavioral Assessment and Research Questionnaire (C-BARQ©, www.cbarq.org)(Hsu and Serpell, 2003).
 
 
 ## 2.6 Quality control
-**Please describe the quality control components as requested here. As it states below, describe pilot study, first session video checks, reliability checks, etc.**
-_Please list the methods used for quality control in the production of the data. This could include pilot work, attention checks, quality checks (e.g. reliability estimates), lab logs, item non-response management, etc._
+<!-- **Please describe the quality control components as requested here. As it states below, describe pilot study, first session video checks, reliability checks, etc.** -->
+<!-- _Please list the methods used for quality control in the production of the data. This could include pilot work, attention checks, quality checks (e.g. reliability estimates), lab logs, item non-response management, etc._ -->
+
+Collecting high-quality data was a key objective of ManyDogs 1.  To validate the study design and analysis plan, we conducted a pilot experiment at a single site with 91 dogs. We pre-registered the pilot study at the Open Science Framework (https://osf.io/gz5pj/). The pilot data are not included in this dataset.
+
+For the primary study presented here, we pre-registered the hypotheses, methods, and analysis plan as a registered report at _Animal Behavior and Cognition_ (https://doi.org/10.31234/osf.io/f86jq). Because this study involved multiple sites running the same protocol, we sought to ensure consistent procedures across sites. Participating sites were required to submit videos of practice sessions as well as the first participant session to the project administrators. Reviewers then viewed the videos to determine whether the protocols were being followed and offered feedback to sites to ensure consistent procedures across sites. Researchers from each lab also practiced entering data into a Qualtrics survey that maintained all behavioral data. Administrators offered feedback to ensure correct data entry.
+
+Experimenters entered data into spreadsheets or paper worksheets live during the experimental sessions. All experimenters had the opportunity to correct data entry errors with another Qualtrics survey. To measure inter-rater reliability of the live coding of experimental sessions, each site had a research assistant blind to the project's focus recode a subset of sessions. This recoding resulted in an overall Cohen's kappa of 0.98 with individual sites ranging from kappa = 0.92-1.00.
 
 
-## 2.7 Data anonymisation and ethical issues
+## 2.7 Data anonymization and ethical issues
 <!--Please provide clarification on the ethical approval obtained for the data collection (e.g. which Institutional Review Board). All primary data should be captured under ethical approval. Please list any steps taken to anonymise the data and indicate other issues concerning research ethics (e.g., informed consent, use of pseudonyms, etc.).-->
 
 Each research site participating in this study provided approval from their respective institutional ethics committee [see Table S1 of @ManyDogsProject.etal.2023a]. All participants gave informed consent to participate and were free to discontinue from the study when wanted.
@@ -193,9 +203,9 @@ https://doi.org/10.26451/abc.10.03.03.2023
 
 ## (3) Dataset description and access
 <!-- The following section should relate specifically to the data file(s) being shared. This section has no word limits. Where you have multiple versions e.g., raw and processed data, please provide the following details for each file. -->
-The data set contains `r nrow(data)` observations of `r ncol(data)` variables described in Table \ref{tab:displayDescription}. The dataset contains variables supplied by a questionnaire as well as experimental variables. Data provided by each dog's guardian include demographic information about the dog and guardian, responses to questions about the types and frequencies of the dog's training activities, and answers to the Canine Behavior and Research Questionnaire [C-BARQ, @Serpell.Hsu.2001; @Hsu.Serpell.2003]. The first eight questions of the C-BARQ concern trainability, and their answers were used as part of the preregistered analysis of pointing  [@ManyDogsProject.etal.2023a]. After answering the C-BARQ trainability questions, guardians could optout of completing the rest of the C-BARQ questions.
+The data set contains `r nrow(data)` observations of `r ncol(data)` variables described in Table \ref{tab:displayDescription}. The dataset contains variables supplied by a survey as well as experimental variables. Data provided by each dog's guardian include demographic information about the dog and guardian, responses to questions about the types and frequencies of the dog's training activities, and answers to the Canine Behavior and Research Questionnaire [C-BARQ, @Serpell.Hsu.2001; @Hsu.Serpell.2003]. 
 
-In addition to the data provided by guardians, experimental variables are included in this data set.  These include information about experimental conditions, proportions of correct choices under ostensive and nonostensive conditions and nonostensive conditions, whether the correct and chosen option were on the right side of the dog, and whether the subject completed the experiment and was used in the analysis.
+In addition to the data provided by guardians, experimental variables are included in this data set.  These include information about experimental conditions, proportions of correct choices under ostensive and non-ostensive conditions and non-ostensive conditions, whether the correct and chosen option were on the right side of the dog, and whether the subject completed the experiment and was used in the analysis.
 
 ## 3.1 Repository location
 <!-- Please include a permanent identifier, such as a DOI, that points to the online location of the dataset. If this has already been accessible prior, a new DOI does not need to be made. -->
@@ -234,7 +244,7 @@ The dataset was uploaded to the Open Science Frame work on <insert date>
 ## 3.9 FAIR data/Codebook
 <!-- Please provide details of how you have made the data conform to FAIR guidelines (Findability, Accessibility, Interoperability, and Reuse; see https://en.wikipedia.org/wiki/FAIR_data). This includes reporting any relevant meta-data and as a minimum should include the details of a data codebook to help independent parties interpret your data file. -->
 
-This dataset is _findable_ through the persistent identifier on the Open Science Framework (), _accessible_ through free availability on Open Science Framework and GitHub, _interoperable_ by using plain-text CSV data files, and _reusable_ with the ??? license. Metadata are included as codebook here (Table \ref{tab:displayDescription}) and with the data on Open Science Framework and GitHub.
+This dataset is _findable_ through the persistent identifier on the Open Science Framework (), _accessible_ through free availability on Open Science Framework and GitHub, _interoperable_ by using plain-text CSV data files, and _reusable_ with the CC-BY 4.0 license. Metadata are included as codebook here (Table \ref{tab:displayDescription}) and with the data on Open Science Framework and GitHub.
 
 
 <!-- We need to address -->
@@ -249,7 +259,7 @@ This dataset is _findable_ through the persistent identifier on the Open Science
 
 
 ## (4) Reuse potential
-The original data from ManyDogs 1 [@ManyDogsProject.etal.2023a] focuses on dog responses in the two-alternative object choice task across warmup, ostenstive, non-ostenstive, and odor control trials. In addition, that dataset includes basic demographics on the dog and guardian, as well as the mean training score from the C-BARQ. The current dataset adds information on dog origin and household, dog training experience, guardian communication practices, and the complete C-BARQ profile. The C-BARQ data in particular are quite rich, with sections on training, aggression, fear, separate-related behavior, excitability, attachment and attention seeking, and miscellaneous problem behaviors. Thus, this dataset allows for assessing associations among all of the C-BARQ measures as well as connections to the experimental task data and the other dog and guardian characteristic data.
+The original data from ManyDogs 1 [@ManyDogsProject.etal.2023a] focuses on dog responses in the two-alternative object choice task across warm-up, ostenstive, non-ostenstive, and odor control trials. In addition, that dataset includes basic demographics on the dog and guardian, as well as the mean training score from the C-BARQ. The current dataset adds information on dog origin and household, dog training experience, guardian communication practices, and the complete C-BARQ profile. The C-BARQ data in particular are quite rich, with sections on training, aggression, fear, separate-related behavior, excitability, attachment and attention seeking, and miscellaneous problem behaviors. Thus, this dataset allows for assessing associations among all of the C-BARQ measures as well as connections to the experimental task data and the other dog and guardian characteristic data.
 
 A key strength of this data set is its diversity. The data were collected by 20 different research sites in nine countries, allowing the assessment of site effects as well as cultural differences. In addition, while most dogs are kept in private homes, the dataset also includes a subset of dogs kept in group housing at working dog facilities. Finally, when appropriate, breed is included, allowing the exploration of breed differences.
 
@@ -283,6 +293,7 @@ We are grateful to the Big Team Science Conference for funding the article proce
 ::: {#refs custom-style="Bibliography"}
 :::
 
+\small
 
 ``` {r, displayDescription, results="asis", echo=FALSE}
 ### display NAs as blank
@@ -292,7 +303,7 @@ colnames(codebook) <- c("Category of Variable", "Variable Name",
                         "Question Text", "Possible Response Values")
 
 ### convert to kable
-codebook_table <- kable(codebook,
+codebook_table_latex <- kable(codebook,
                    format = "latex", booktabs = TRUE, longtable = TRUE,
                    caption = "Data description for complete ManyDogs1 project data") |> 
   kable_styling(latex_options = c("repeat_header")) |> 
@@ -301,6 +312,27 @@ codebook_table <- kable(codebook,
   column_spec(3:4, width = "3in") |> 
   landscape(margin = "1cm")
 
-codebook_table
-                   
+# codebook_table_latex
+
+codebook_table_html <- flextable::flextable(codebook) |>
+  width(j = 1, 1.45) |> 
+  width(j = 2, 1.6) |> 
+  width(j = 3:4, 2.25) |>
+  fontsize(size = 10) |> 
+  font(part = "all", fontname = "Times New Roman") |> 
+  set_caption("Data description for complete ManyDogs1 project data") #|> 
+  # kable_styling(latex_options = c("repeat_header")) |> 
+  # column_spec(1, width = "1.5in") |> 
+  # column_spec(2, monospace = TRUE) |> 
+  # column_spec(3:4, width = "3in") #|> 
+  # landscape(margin = "1cm")
+
+# codebook_table_html
+
+if (knitr::is_latex_output()) {
+  codebook_table_latex
+} else {
+  codebook_table_html
+}
+
 ```
