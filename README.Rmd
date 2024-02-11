@@ -74,7 +74,7 @@ engines such as <a href="https://g.co/datasetsearch">Google Dataset Search</a>.
 </tr>
 <tr>
 <td>description</td>
-<td><code itemprop="description">The dataset from the paper <a href="https://doi.org/10.17605/OSF.IO/7RWPC">Data for ManyDogs 1</a>. In this project, pet dogs voluntarily participated in a two-alternative object choice task with ostensive and non-ostensive experimental conditions, along with warm-up (one cup, two cup) trials and an odor control condition. We collected data from 20 sites in nine countries. The data file (`manydogs_etal_2024_data.csv`) contains records from 704 dogs tested for the main experiment between 2022-01-20 and 2023-01-23. Each row represents data for an individual dog.</code></td>
+<td><code itemprop="description">The dataset from the paper <a href="https://doi.org/10.31219/osf.io/jw24a">Data for ManyDogs 1</a>. In this project, pet dogs voluntarily participated in a two-alternative object choice task with ostensive and non-ostensive experimental conditions, along with warm-up (one cup, two cup) trials and an odor control condition. We collected data from 20 sites in nine countries. The data file (`manydogs_etal_2024_data.csv`) contains records from 704 dogs tested for the main experiment between 2022-01-20 and 2023-01-23. Each row represents data for an individual dog.</code></td>
 </tr>
 </tr>
 <tr>
@@ -87,7 +87,7 @@ engines such as <a href="https://g.co/datasetsearch">Google Dataset Search</a>.
 </tr>
 <tr>
 <td>citation</td>
-<td><code itemprop="citation">https://doi.org/10.17605/OSF.IO/7RWPC</code></td>
+<td><code itemprop="citation">https://doi.org/10.31219/osf.io/jw24a</code></td>
 </tr>
 <tr>
 <td>license</td>
