@@ -19,7 +19,7 @@ This repository provides the complete data and reproducible research materials f
 
 If you use any of these materials, please cite:
 
-ManyDogs Project, Espinosa, J., Hare, E., Alberghina, D., Perez Valverde, B, & Stevens, J.R. (2024). Data for ManyDogs 1. https://doi.org/10.17605/OSF.IO/7RWPC
+ManyDogs Project, Espinosa, J., Hare, E., Alberghina, D., Perez Valverde, B, & Stevens, J.R. (2024). Data for ManyDogs 1. _OSF Preprints_ [doi:10.31219/osf.io/jw24a](https://doi.org/10.31219/osf.io/jw24a)
 
 ## Summary
 
